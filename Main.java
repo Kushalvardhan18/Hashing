@@ -12,7 +12,18 @@ public class Main {
         System.out.println(menuList );
         System.out.println(menuList.containsKey("Pizza"));
         System.out.println(menuList.get("Chai"));
+
+        //Key Sets
         Set<String> myKeys = menuList.keySet();
         System.out.println(myKeys);
+
+        // Iteration
+        for (String k : myKeys){
+            System.out.println("Key = "+k+" , "+"value = "+menuList.get(k));
+        }
+
+        // EntrySets
+            System.out.println("Key value"+menuList.entrySet());
+
     }
 }
