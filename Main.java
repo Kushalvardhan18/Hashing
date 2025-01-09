@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args){
         HashMap <String, Integer> menuList = new HashMap<>();
@@ -10,5 +12,7 @@ public class Main {
         System.out.println(menuList );
         System.out.println(menuList.containsKey("Pizza"));
         System.out.println(menuList.get("Chai"));
+        Set<String> myKeys = menuList.keySet();
+        System.out.println(myKeys);
     }
 }
